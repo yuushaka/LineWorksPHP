@@ -18,7 +18,7 @@ $ck =  __LW_consumerKey__;
 $api_id = __LW_apiId__;
 
 //APIのURL(突如変更になることがあるので注意が必要)
-$apiUrl = "https://apis.worksmobile.com/r/{$api_id}/message/v1/bot/".Config::get("app.LW_botNo2")."/message/push";
+$apiUrl = "https://apis.worksmobile.com/r/{$api_id}/message/v1/bot/ __LW_BotNumber__ /message/push";
 
 //トークボットを作る
 $TalkBot = new TalkBot($at,$ck);
